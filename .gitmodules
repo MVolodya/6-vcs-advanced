@@ -1,0 +1,3 @@
+[submodule "hello-rchp"]
+	path = hello-rchp
+	url = https://github.com/MVolodya/hello-world-github
