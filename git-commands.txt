@@ -86,3 +86,18 @@ git status
 git commit -m "added new submodule from hello-world-github repository"
 git push
 ==========
+
+TASK 5
+----------
+git checkout -b gh-pages
+echo "<h1>Hello world from gh-pages branch</h1>" >> index.html
+git status
+git add .
+git commit -m "added index.html to gh-pages branch"
+git push -u origin gh-pages
+git add .
+git commit -m "updated index.html to gh-pages branch"
+git push
+(https://mvolodya.github.io/6-vcs-advanced/)
+==========
+
