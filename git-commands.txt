@@ -101,3 +101,27 @@ git push
 (https://mvolodya.github.io/6-vcs-advanced/)
 ==========
 
+TASK 6
+----------
+echo "this is file.txt" >> file.txt
+git status
+git add .
+git commit -m "added file.txt"
+git push
+git checkout -b task-6
+git status
+git add .
+git commit -m "updated file.txt in task-6 branch"
+git push -u origin task-6
+git checkout master
+git merge task-6
+	(Auto-merging file.txt
+	CONFLICT (add/add): Merge conflict in file.txt
+	Automatic merge failed; fix conflicts and then commit the result.)
+git merge --abort
+git status
+git add .
+git commit -m "merge two files"
+git status
+git push
+==========
