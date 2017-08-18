@@ -78,3 +78,11 @@ git tag -a v1.0 -m 'my version 1.0'
 git push
 git push origin --tags
 ==========
+
+TASK 4
+----------
+git submodule add https://github.com/MVolodya/hello-world-github hello-rchp
+git status
+git commit -m "added new submodule from hello-world-github repository"
+git push
+==========
