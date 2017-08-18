@@ -65,3 +65,16 @@ git checkout master
 git branch -d experiment
 git push origin --delete experiment
 ==========
+
+TASK 3
+----------
+touch task3.txt
+git add .
+git commit -m "Added task3.txt"
+touch task3-1.txt
+git add .
+git commit -m "Added task3-1.txt"
+git tag -a v1.0 -m 'my version 1.0'
+git push
+git push origin --tags
+==========
