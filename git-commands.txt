@@ -36,3 +36,32 @@ git push
 git branch -d architecture
 git push origin --delete architecture
 ==========
+
+TASK 2
+----------
+git branch experiment
+cd assets/
+touch text.txt
+cd ..
+git status
+git add .
+git commit -m "Added text.txt to assets folder"
+touch message.txt
+git add .
+git commit -m "Added message.txt to file structure"
+git branch
+git checkout experiment
+git rebase master
+git fetch origin
+touch exp.txt
+git add .
+git commit -m "Added txt file to experiment branch"
+git checkout master
+git merge experiment
+git push
+git checkout experiment
+git push -u origin experiment
+git checkout master
+git branch -d experiment
+git push origin --delete experiment
+==========
