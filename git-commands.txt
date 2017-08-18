@@ -98,7 +98,7 @@ git push -u origin gh-pages
 git add .
 git commit -m "updated index.html to gh-pages branch"
 git push
-(https://mvolodya.github.io/6-vcs-advanced/)
+	(https://mvolodya.github.io/6-vcs-advanced/)
 ==========
 
 TASK 6
