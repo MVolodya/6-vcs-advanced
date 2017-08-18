@@ -1,0 +1,38 @@
+TASK 1
+----------
+mkdir hm-2-advanced
+cd hm-2-advanced/
+git clone https://github.com/MVolodya/6-vcs-advanced.git .
+echo "# 6-vcs-advanced" >> README.md
+touch git-commands.txt
+git status
+git add .
+git commit -m "Added README & git-commands files"
+git push
+git checkout -b architecture
+mkdir assets
+mkdir uploads
+echo "Hello world" >> index.html
+git status
+git add .
+git commit -m "Added a file structure"
+echo "Hello all.js" >> assets/all.js
+echo "Hello css.js" >> assets/css.js
+git status 
+git add .
+git commit -m "Added js files to assets folder"
+git push -u origin architecture
+touch .gitignore
+cd uploads/
+touch .gitkeep
+cd ..
+git status
+git add .
+git commit -m "Added .gitignore"
+git push
+git checkout master
+git merge architecture
+git push
+git branch -d architecture
+git push origin --delete architecture
+==========
